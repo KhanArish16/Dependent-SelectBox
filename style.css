@@ -1,0 +1,135 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(40, 147, 169, 0.9220938375350141) 0%,
+    #3ec7bcd8 100%
+  );
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(202, 202, 202, 0.036);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.hidden {
+  display: none;
+}
+.country-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the state select element */
+.state-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the city select element */
+.city-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the "Enter" button */
+.enter-button {
+  /* background: linear-gradient(135deg, #ff6b6b, #ffa07a); */
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff6b6b;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid #ffa07a7f;
+  margin-top: 10px;
+}
+
+.display-module {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 50px;
+  font-family: "Courier New", Courier, monospace;
+  background: linear-gradient(135deg, #ff6b6b, #ffa07a);
+  color: #fff;
+  padding: 6rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  z-index: 10;
+  overflow: hidden;
+  animation: slide-in 0.5s ease-in-out forwards;
+}
+@keyframes slide-in {
+  0% {
+    max-width: 0;
+    padding: 0;
+  }
+  100% {
+    max-width: 300px;
+    padding: 6rem;
+  }
+}
+
+/* ////form///// */
+.userForm {
+  display: none;
+  max-width: 300px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ff6b6b, #ffa07a);
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.displayUserData {
+  text-align: center;
+  color: #0056b3;
+}
